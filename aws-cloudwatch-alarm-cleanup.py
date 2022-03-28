@@ -6,7 +6,7 @@ cloudwatch = boto3.client('cloudwatch', region_name = 'us-east-1')
 ec2 = boto3.client('ec2', region_name = 'us-east-1')
 
 responseCW = cloudwatch.describe_alarms(
-    AlarmNamePrefix='QUOTES-CLOUD-EC2-SystemHealthCheck-Terminate'
+    AlarmNamePrefix='EC2-SystemHealthCheck-Terminate'
 )
 
 responseEC2 = ec2.describe_instances(
