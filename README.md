@@ -3,7 +3,7 @@ Perform cleanup of unused system health check alarms for terminated instances wh
 
 #### Description
 
-System health check alarms in AWS may be used to perform a triggered action based on instance health status, such a when a host becomes degraded, users may want the instance to terminate immediately. When such alarms are created using automation such as Cloud-Init scripts during instance start-up processes, the alarm will remain orphaned upon instance termination. This tool may be executed as a Lamda function to perform such cleanups based on a pre-defined schedule such as once per week.
+System health check alarms in AWS may be used to perform a triggered action based on instance health status, such a when a host becomes degraded, users may want the instance to terminate immediately. When such alarms are created using automation such as Cloud-Init scripts during instance start-up processes, the alarm will remain orphaned upon instance termination. This tool may be executed as a Lamda function to perform cleanups based on a pre-defined schedule such as once per week.
 
 #### Intended Audience
 * Devops
